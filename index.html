@@ -19,8 +19,7 @@
         <div class="segment b"></div>
     </div>
     <div id="controls">
-        <input type="number" id="num-input" min="0" max="9" value="8">
-        <button onclick="updateDisplay()">Show</button>
+        <input type="number" id="num-input" min="0" max="9" value="8" onchange="updateDisplay()">
     </div>
     <script src="script.js"></script>
     <script>
@@ -29,6 +28,8 @@
             setDisplay(display1, num);
             renderDisplay(display1);
         }
+
+        updateDisplay()
     </script>
 </body>
 

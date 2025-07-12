@@ -117,7 +117,7 @@ const setDisplay = (display, num) => {
             getDisplay.m = 1
             getDisplay.bl = 0
             getDisplay.br = 1
-            getDisplay.b = 0
+            getDisplay.b = 1
         },
 
 
