@@ -1,0 +1,45 @@
+body {
+    background: #181818;
+    color: #eee;
+    font-family: sans-serif;
+}
+
+#led-container {
+    width: 120px;
+    height: 200px;
+    position: relative;
+    margin: 40px auto;
+}
+
+.segment {
+    position: absolute;
+    background: #222;
+    opacity: 0.15;
+    transition: opacity 0.2s, background 0.5s;
+    border-radius: 8px;
+}
+
+.segment.on {
+    opacity: 1;
+    background: #f00;
+}
+
+/* Segment positions */
+.segment.t   { top: 10px; left: 30px; width: 60px; height: 15px; }
+.segment.tl  { top: 25px; left: 15px; width: 15px; height: 60px; }
+.segment.tr  { top: 25px; right: 15px; width: 15px; height: 60px; }
+.segment.m   { top: 80px; left: 30px; width: 60px; height: 15px; }
+.segment.bl  { top: 95px; left: 15px; width: 15px; height: 60px; }
+.segment.br  { top: 95px; right: 15px; width: 15px; height: 60px; }
+.segment.b   { bottom: 10px; left: 30px; width: 60px; height: 15px; }
+
+#controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="number"] {
+    width: 40px;
+    font-size: 1.2em;
+    text-align: center;
+}

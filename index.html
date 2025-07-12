@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seven-segment Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="led-container">
+        <div class="segment t"></div>
+        <div class="segment tl"></div>
+        <div class="segment tr"></div>
+        <div class="segment m"></div>
+        <div class="segment bl"></div>
+        <div class="segment br"></div>
+        <div class="segment b"></div>
+    </div>
+    <div id="controls">
+        <input type="number" id="num-input" min="0" max="9" value="8">
+        <button onclick="updateDisplay()">Show</button>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function updateDisplay() {
+            const num = parseInt(document.getElementById('num-input').value, 10);
+            setDisplay(display1, num);
+            renderDisplay(display1);
+        }
+    </script>
+</body>
+
+</html>
